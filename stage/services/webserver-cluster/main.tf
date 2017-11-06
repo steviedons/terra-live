@@ -11,7 +11,7 @@ provider "aws" {
 }
 
 module "webserver-cluster" {
-  source = "../../../modules/services/webserver-cluster"
+  source = "git@github.com:steviedons/terra-live.git"
 
   cluster_name            = "webservers-stage"
   db_remote_state_bucket  = "steviedons-terraform-up-and-running-state"
